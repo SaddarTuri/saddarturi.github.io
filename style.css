@@ -185,27 +185,25 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .stat-plus{font-size:1.1rem;font-weight:700;color:var(--accent)}
 .stat-label{display:block;font-size:0.75rem;color:var(--text-muted);margin-top:6px;font-weight:500}
 
-.about-text h3{font-size:1.5rem;font-weight:700;margin-bottom:18px;letter-spacing:-0.02em}
+.about-text h3{font-size:1.5rem;font-weight:700;margin-bottom:16px;letter-spacing:-0.02em}
 .about-text p{color:var(--text-secondary);margin-bottom:14px;font-size:0.97rem;line-height:1.8}
 .about-text strong{color:var(--text-primary)}
-.about-highlights{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0}
-.highlight-item{display:flex;align-items:center;gap:12px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;transition:var(--transition)}
-.highlight-item:hover{border-color:var(--border-hover);background:var(--bg-card-hover)}
-.highlight-icon{font-size:1.3rem;flex-shrink:0}
-.highlight-item strong{display:block;font-size:0.78rem;color:var(--text-muted);font-weight:500;text-transform:uppercase;letter-spacing:0.05em}
-.highlight-item span{font-size:0.88rem;font-weight:600;color:var(--text-primary)}
-.about-actions{display:flex;gap:12px;flex-wrap:wrap}
+.about-meta{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}
+.about-meta-item{display:flex;align-items:center;gap:7px;font-size:0.85rem;color:var(--text-secondary);font-weight:500}
+.about-meta-item span:first-child{font-size:1rem}
+.about-meta-item strong{color:var(--text-primary)}
+.about-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}
 
 /* ============================================
    EXPERIENCE TIMELINE
    ============================================ */
 .experience{background:var(--bg-primary)}
-.timeline{position:relative;padding-left:36px}
-.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:linear-gradient(to bottom,var(--accent),rgba(59,130,246,0.1));border-radius:2px}
-.timeline-item{position:relative;margin-bottom:32px}
+.timeline{position:relative;padding-left:24px}
+.timeline::before{content:'';position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:linear-gradient(to bottom,var(--accent),rgba(59,130,246,0.08));border-radius:2px}
+.timeline-item{position:relative;margin-bottom:28px}
 .timeline-item:last-child{margin-bottom:0}
-.timeline-dot{position:absolute;left:-21px;top:28px;width:14px;height:14px;border-radius:50%;background:var(--gradient);border:2px solid var(--bg-secondary);box-shadow:0 0 0 3px rgba(59,130,246,0.3);z-index:1;transition:var(--transition)}
-.timeline-item:hover .timeline-dot{box-shadow:0 0 0 6px rgba(59,130,246,0.2);transform:scale(1.2)}
+.timeline-dot{position:absolute;left:-14px;top:26px;width:12px;height:12px;border-radius:50%;background:var(--gradient);border:2px solid var(--bg-secondary);box-shadow:0 0 0 3px rgba(59,130,246,0.25);z-index:2;transition:var(--transition)}
+.timeline-item:hover .timeline-dot{box-shadow:0 0 0 5px rgba(59,130,246,0.2);transform:scale(1.15)}
 .timeline-card{background:var(--bg-card);border:1px solid var(--border);border-left:3px solid rgba(59,130,246,0.4);border-radius:var(--radius-lg);padding:28px 32px;transition:var(--transition)}
 .timeline-card:hover{border-color:var(--border-hover);border-left-color:var(--accent);transform:translateX(6px);box-shadow:var(--shadow-glow)}
 .timeline-header{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:16px;flex-wrap:wrap}
@@ -215,6 +213,9 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .timeline-date{font-family:'Fira Code',monospace;font-size:0.78rem;color:var(--text-muted);white-space:nowrap}
 .timeline-date.current-role{color:var(--accent);font-weight:600}
 .timeline-location{font-size:0.78rem;color:var(--text-muted)}
+.role-progression{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:14px;padding:8px 12px;background:rgba(59,130,246,0.06);border:1px solid rgba(59,130,246,0.12);border-radius:8px;font-size:0.78rem;font-weight:500;color:var(--text-muted)}
+.role-progression svg{color:var(--accent);opacity:0.6;flex-shrink:0}
+.role-current{color:var(--accent);font-weight:700}
 .timeline-bullets{list-style:none;margin-bottom:16px;display:flex;flex-direction:column;gap:8px}
 .timeline-bullets li{position:relative;padding-left:18px;font-size:0.875rem;color:var(--text-secondary);line-height:1.65}
 .timeline-bullets li::before{content:'▸';position:absolute;left:0;color:var(--accent);font-size:0.72rem;top:3px}
