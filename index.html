@@ -111,144 +111,223 @@
   <!-- ===== ABOUT ===== -->
   <section class="about section" id="about">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Who I am</span>
-        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+
+      <!-- Section Header -->
+      <div class="about-hd reveal">
+        <span class="about-num">01</span>
+        <h2 class="about-title">About Me</h2>
+        <div class="about-hd-line"></div>
       </div>
-      <div class="about-grid">
-        <div class="about-image-wrapper reveal">
-          <div class="about-img-frame">
-            <img src="images/workplace.png" alt="Saddar Abbas at his workspace" class="about-img" />
-            <div class="about-badge-floating">📱 Mobile Expert</div>
-          </div>
-          <div class="about-stats">
-            <div class="stat-card">
-              <span class="stat-number counter" data-target="6">0</span><span class="stat-plus">+</span>
-              <span class="stat-label">Years Exp.</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number counter" data-target="15">0</span><span class="stat-plus">+</span>
-              <span class="stat-label">Apps Shipped</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">10K</span><span class="stat-plus">+</span>
-              <span class="stat-label">Active Users</span>
-            </div>
-          </div>
-        </div>
-        <div class="about-text reveal">
-          <h3>Building Mobile Apps That Scale to Millions</h3>
-          <p>
-            Senior Mobile Developer with <strong>6+ years</strong> of experience delivering scalable,
-            high-performance applications using <strong>Kotlin, Java</strong> and <strong>Flutter</strong>.
-            Currently based in <strong>Riyadh, Saudi Arabia</strong>.
-          </p>
-          <p>
-            Deep expertise in Clean Architecture, modularization, and AI-powered mobile features.
-            I've led technical decisions, mentored teams, and shipped enterprise apps used by
-            <strong>10,000+ active users</strong> across the UK — from architecture to Play Store release.
-          </p>
-          <div class="about-meta">
-            <div class="about-meta-item"><span>🎓</span> <strong>BS Software Engineering</strong> &nbsp;·&nbsp; Islamia College Peshawar</div>
-            <div class="about-meta-item"><span>📱</span> Android &amp; Flutter &nbsp;·&nbsp; <strong>Open to Work</strong></div>
-            <div class="about-meta-item"><span>🌐</span> <a href="https://www.linkedin.com/in/saddar-abbas-93a344142/" target="_blank" rel="noopener" style="color:var(--accent)">LinkedIn</a> &nbsp;·&nbsp; <a href="https://github.com/SaddarTuri" target="_blank" rel="noopener" style="color:var(--accent)">GitHub</a> &nbsp;·&nbsp; <a href="mailto:saddarturi@gmail.com" style="color:var(--accent)">saddarturi@gmail.com</a></div>
-          </div>
-          <div class="about-actions">
-            <a href="mailto:saddarturi@gmail.com" class="btn btn-primary">Hire Me</a>
-            <a href="https://www.linkedin.com/in/saddar-abbas-93a344142/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn Profile</a>
+
+      <!-- Bio + Photo row -->
+      <div class="about-top reveal">
+        <p class="about-bio">
+          I am a Senior Mobile Engineer with 6+ years of experience designing and delivering scalable,
+          high-performance mobile applications used by <strong>10,000+ active users</strong> across international markets.
+          I specialize in architecting production-grade Android systems using <strong>Kotlin, Clean Architecture,</strong>
+          and modular design, focused on building maintainable, testable, and scalable apps that deliver measurable
+          engineering impact, from reducing crash rates to enabling secure real-time enterprise workflows.
+          At Joblogic (UK-based Field Service Management platform), I led the architecture and development of
+          multiple marketplace applications including Lone Worker Monitoring, AI Expense Scanner, AI Rephraser,
+          and JL Chat. I have successfully migrated legacy Cordova apps to native Android &amp; Flutter with
+          Hilt-based modular architecture, implemented offline-first synchronization with Room + WorkManager,
+          integrated secure payment systems (Stripe, Card, BACS, Klarna, Google Pay), and reduced crash rates
+          through lifecycle-aware coroutines and structured exception handling. Currently open to
+          <strong>Senior Android / Mobile Architect</strong> opportunities in Saudi Arabia.
+        </p>
+        <div class="about-photo-card">
+          <img src="images/workplace.png" alt="Saddar Abbas workspace" class="about-photo-img" />
+          <div class="about-photo-overlay">
+            <span class="overlay-eyebrow">THE WORKSHOP</span>
+            <p class="overlay-title">Where the code ships from</p>
+            <span class="overlay-location">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Riyadh, Saudi Arabia
+            </span>
           </div>
         </div>
       </div>
+
+      <!-- Industries -->
+      <div class="about-block reveal">
+        <div class="about-block-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+          Industries I've Shipped For
+        </div>
+        <div class="about-chips">
+          <span class="about-chip">Field Service Management</span>
+          <span class="about-chip">Enterprise Mobile</span>
+          <span class="about-chip">FinTech &amp; Payments</span>
+          <span class="about-chip">AI / On-device ML</span>
+          <span class="about-chip">Healthcare</span>
+          <span class="about-chip">LegalTech</span>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="about-block reveal">
+        <div class="about-block-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M5 8l6 6"/><path d="M4 14l6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="M22 22l-5-10-5 10"/><path d="M14 18h6"/></svg>
+          Languages
+        </div>
+        <div class="about-chips">
+          <span class="about-chip chip-lang">English</span>
+          <span class="about-chip chip-lang">Pashto</span>
+          <span class="about-chip chip-lang">Urdu</span>
+        </div>
+      </div>
+
+      <!-- Track Record -->
+      <div class="about-block reveal">
+        <div class="about-block-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          Track Record
+        </div>
+        <div class="track-grid">
+          <div class="track-card">
+            <div class="track-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <strong>10,000+ Active Users</strong>
+          </div>
+          <div class="track-card">
+            <div class="track-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <strong>35-40% Crash Rate Reduction</strong>
+          </div>
+          <div class="track-card">
+            <div class="track-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+            </div>
+            <strong>5+ Companies Shipped For</strong>
+          </div>
+          <div class="track-card">
+            <div class="track-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <strong>UK · Saudi · USA · Germany</strong>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- ===== EXPERIENCE ===== -->
   <section class="experience section" id="experience">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Where I've worked</span>
-        <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+      <div class="about-hd reveal">
+        <span class="about-num">02</span>
+        <h2 class="about-title">Experience</h2>
+        <div class="about-hd-line"></div>
       </div>
       <div class="timeline">
 
+        <!-- Joblogic -->
         <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
             <div class="timeline-header">
               <div>
                 <h3>Senior Mobile Developer</h3>
-                <span class="company">Joblogic Service Management Software</span>
+                <a href="https://www.linkedin.com/company/joblogic/" target="_blank" rel="noopener" class="company company-link">Joblogic Service Management Software ↗</a>
               </div>
               <div class="timeline-meta">
-                <span class="timeline-date current-role">Oct 2022 - Present</span>
-                <span class="timeline-location">📍 Pakistan</span>
+                <span class="timeline-date current-role">Oct 2022 - Oct 2025</span>
+                <span class="timeline-location">📍 Lahore, Pakistan (UK &amp; Vietnam)</span>
               </div>
             </div>
-            <div class="role-progression">
-              <span>Android Developer</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
-              <span>Mobile Developer</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
-              <span class="role-current">Senior Mobile Developer</span>
-            </div>
             <ul class="timeline-bullets">
-              <li>Migrated legacy Cordova app to native Android and Flutter using Clean Architecture and MVVM.</li>
-              <li>Built marketplace apps: Lone Worker (man-down detection, panic alerts, GPS tracking), AI Expense Scanner, and AI Rephraser.</li>
-              <li>Integrated Stripe payments (Card, BACS, Klarna, Google Pay) and built JL Chat with Twilio for one-to-one &amp; group messaging.</li>
-              <li>Used Dagger, Koin, and Hilt for DI; integrated Firebase Crashlytics, Analytics, and hardware sensors.</li>
-              <li>Led code reviews, mentored junior developers, managed CI/CD pipelines, and collaborated with UK &amp; Vietnam teams.</li>
+              <li>Architected scalable Android and Flutter modules using Clean Architecture and MVVM, improving maintainability and delivery speed.</li>
+              <li>Migrated legacy Cordova apps to native Android and Flutter with Dagger Hilt for modular, testable architecture.</li>
+              <li>Reduced crash rates through lifecycle-aware coroutines, structured exception handling, and proactive Firebase Crashlytics monitoring.</li>
+              <li>Implemented offline-first data synchronization using Room and WorkManager to ensure reliable background processing.</li>
+              <li>Developed Joblogic Marketplace apps: Lone Worker (man-down detection, panic alerts, PIN/duress logic, continuous background tracking), AI Expense Scanner (AI-based receipt extraction), and AI Rephraser (intelligent content refinement).</li>
+              <li>Integrated Stripe payments (Card, BACS, Klarna, Google Pay) to streamline enterprise financial workflows.</li>
+              <li>Built JL Chat with Twilio, end-to-end one-to-one and group messaging with text, images, files, video, voice messages, plus seen and delivered indicators.</li>
+              <li>Led code reviews, enforced architectural standards, mentored junior developers, and collaborated with UK and Vietnam teams under Agile, managing CI/CD pipelines and releases.</li>
             </ul>
             <div class="timeline-tags">
-              <span>Kotlin</span><span>Java</span><span>Flutter</span><span>Clean Architecture</span><span>Stripe</span><span>Twilio</span><span>Firebase</span><span>CI/CD</span>
+              <span>Kotlin</span><span>Java</span><span>Flutter</span><span>Dart</span><span>Clean Architecture</span><span>Dagger Hilt</span><span>MVVM</span><span>MVI</span><span>Coroutines</span><span>Flow</span><span>Room</span><span>WorkManager</span><span>Stripe</span><span>Twilio</span><span>Firebase</span><span>CI/CD</span><span>Mockito</span><span>JUnit</span>
             </div>
           </div>
         </div>
 
+        <!-- Coding Pixel -->
         <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
             <div class="timeline-header">
               <div>
                 <h3>Android Developer</h3>
-                <span class="company">Coding Pixel</span>
+                <a href="https://www.linkedin.com/company/codingpixel/" target="_blank" rel="noopener" class="company company-link">Coding Pixel ↗</a>
               </div>
               <div class="timeline-meta">
-                <span class="timeline-date">Sep 2020 - Sep 2022</span>
+                <span class="timeline-date">Sep 2021 - Sep 2022</span>
                 <span class="timeline-location">📍 Lahore, Pakistan</span>
               </div>
             </div>
             <ul class="timeline-bullets">
-              <li>Built Open Borders (US immigration app, 1K+ downloads) and Eye Cure (doctor appointment app) from scratch.</li>
-              <li>Developed apps in health, consultation, fitness, dating, and food domains.</li>
-              <li>Focused on clean UI, REST API integration, Firebase auth, and push notifications.</li>
-              <li>Managed testing, Play Store releases, client feedback, and junior developer mentoring.</li>
+              <li>Developed and launched Android apps from scratch, including OpenBoarder (1,000+ users) and EyeCure with real-time chat and scheduling.</li>
+              <li>Implemented multilingual support, dynamic questionnaires, consultation booking, secure payments, and tablet-optimised UI.</li>
+              <li>Integrated REST APIs, authentication, push notifications, and secure data handling using Dependency Injection (Koin &amp; Dagger Hilt).</li>
+              <li>Followed MVVM Clean Architecture, improving validation, error handling, crash monitoring, and overall app scalability.</li>
+              <li>Collaborated with US clients and cross-functional teams, managed Play Store releases, agile tasks, and mentored junior developers.</li>
             </ul>
             <div class="timeline-tags">
-              <span>Kotlin</span><span>Java</span><span>Retrofit</span><span>Firebase</span><span>Koin</span>
+              <span>Kotlin</span><span>MVVM</span><span>Koin</span><span>Dagger Hilt</span><span>Stripe</span><span>Socket.IO</span><span>Google Pay</span>
             </div>
           </div>
         </div>
 
+        <!-- AcclivousByte -->
         <div class="timeline-item reveal">
           <div class="timeline-dot"></div>
           <div class="timeline-card">
             <div class="timeline-header">
               <div>
-                <h3>Junior Android Developer</h3>
-                <span class="company">Khyber Coded</span>
+                <h3>Android Developer</h3>
+                <a href="https://www.linkedin.com/company/acclivousbyte/" target="_blank" rel="noopener" class="company company-link">AcclivousByte ↗</a>
               </div>
               <div class="timeline-meta">
-                <span class="timeline-date">Sep 2019 - Jun 2020</span>
+                <span class="timeline-date">Mar 2021 - Sep 2021</span>
+                <span class="timeline-location">📍 Lahore, Pakistan</span>
+              </div>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Developed Android applications for international and KSA clients using Kotlin and Java, delivering scalable production solutions.</li>
+              <li>Built and maintained Play Store applications with 500+ to 1,000+ downloads, ensuring performance optimisation and release stability.</li>
+              <li>Contributed to bilingual (Arabic / English) family database systems with hierarchical tree visualisation and secure document storage.</li>
+              <li>Integrated REST APIs and enhanced application performance, stability, and user experience in live production environments.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Java</span><span>Kotlin</span><span>RTL Localization</span><span>REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Khyber Coded -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Android Developer</h3>
+                <a href="https://www.linkedin.com/company/khyber-coded/" target="_blank" rel="noopener" class="company company-link">Khyber Coded ↗</a>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">Sep 2019 - Sep 2020</span>
                 <span class="timeline-location">📍 Peshawar, Pakistan</span>
               </div>
             </div>
             <ul class="timeline-bullets">
-              <li>Started career building native Android apps using Java and Kotlin.</li>
-              <li>Worked on RESTful API integrations, debugging, and app stability improvements.</li>
-              <li>Collaborated with senior developers to learn architecture patterns and best practices.</li>
+              <li>Started career as an Android Developer, gaining hands-on experience with Java and Kotlin for native Android app development.</li>
+              <li>RESTful API integrations, debugging, and improving app stability through clean code practices and version control.</li>
+              <li>Collaborated with senior developers to learn architecture practices and improve overall code quality.</li>
             </ul>
             <div class="timeline-tags">
-              <span>Java</span><span>Kotlin</span><span>Android SDK</span><span>Git</span>
+              <span>Java</span><span>Kotlin</span><span>XML</span><span>RecyclerView</span><span>Git</span>
             </div>
           </div>
         </div>
@@ -260,110 +339,70 @@
   <!-- ===== SKILLS ===== -->
   <section class="skills section" id="skills">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">What I know</span>
-        <h2 class="section-title">Tech <span class="gradient-text">Stack</span></h2>
+      <div class="about-hd reveal">
+        <span class="about-num">03</span>
+        <h2 class="about-title">Tech Stack</h2>
+        <div class="about-hd-line"></div>
       </div>
       <div class="skills-categories reveal">
         <div class="skill-category">
-          <div class="skill-category-header">
-            <span class="skill-category-icon">🤖</span>
-            <h3>Android Development</h3>
-          </div>
+          <div class="skill-category-header"><span class="skill-category-icon">🤖</span><h3>Android (Native)</h3></div>
           <div class="skill-tags">
-            <span class="skill-tag">Kotlin</span><span class="skill-tag">Java</span>
-            <span class="skill-tag">Jetpack Compose</span><span class="skill-tag">Android SDK</span>
-            <span class="skill-tag">Coroutines</span><span class="skill-tag">Flow / StateFlow</span>
-            <span class="skill-tag">Paging 3</span><span class="skill-tag">Room</span>
-            <span class="skill-tag">DataStore</span><span class="skill-tag">WorkManager</span>
-            <span class="skill-tag">Navigation Component</span><span class="skill-tag">ExoPlayer</span>
+            <span class="skill-tag">Kotlin</span><span class="skill-tag">Java</span><span class="skill-tag">Jetpack Compose</span><span class="skill-tag">Coroutines</span><span class="skill-tag">Flow / StateFlow</span><span class="skill-tag">Room</span><span class="skill-tag">WorkManager</span><span class="skill-tag">Navigation Component</span><span class="skill-tag">Material Design</span>
           </div>
         </div>
         <div class="skill-category">
-          <div class="skill-category-header">
-            <span class="skill-category-icon">🐦</span>
-            <h3>Flutter &amp; Cross-Platform</h3>
-          </div>
+          <div class="skill-category-header"><span class="skill-category-icon">🐦</span><h3>Cross-Platform</h3></div>
           <div class="skill-tags">
-            <span class="skill-tag">Flutter</span><span class="skill-tag">Dart</span>
-            <span class="skill-tag">BLoC</span><span class="skill-tag">GetX</span>
-            <span class="skill-tag">Provider</span><span class="skill-tag">Riverpod</span>
+            <span class="skill-tag">Flutter</span><span class="skill-tag">Dart</span><span class="skill-tag">Riverpod</span><span class="skill-tag">Bloc</span><span class="skill-tag">Provider</span><span class="skill-tag">GetX</span><span class="skill-tag">Dio</span>
           </div>
         </div>
         <div class="skill-category">
-          <div class="skill-category-header">
-            <span class="skill-category-icon">🏛️</span>
-            <h3>Architecture &amp; Design</h3>
-          </div>
+          <div class="skill-category-header"><span class="skill-category-icon">🏛️</span><h3>Architecture &amp; Patterns</h3></div>
           <div class="skill-tags">
-            <span class="skill-tag">Clean Architecture</span><span class="skill-tag">MVVM</span>
-            <span class="skill-tag">MVI</span><span class="skill-tag">Modularization</span>
-            <span class="skill-tag">SOLID Principles</span><span class="skill-tag">Offline-First</span>
-            <span class="skill-tag">Hilt</span><span class="skill-tag">Dagger</span><span class="skill-tag">Koin</span>
+            <span class="skill-tag">Clean Architecture</span><span class="skill-tag">MVVM</span><span class="skill-tag">MVI</span><span class="skill-tag">Multi-module Systems</span><span class="skill-tag">SOLID Principles</span><span class="skill-tag">Offline-first Design</span><span class="skill-tag">Repository Pattern</span>
           </div>
         </div>
         <div class="skill-category">
-          <div class="skill-category-header">
-            <span class="skill-category-icon">🔗</span>
-            <h3>APIs &amp; Services</h3>
-          </div>
+          <div class="skill-category-header"><span class="skill-category-icon">💉</span><h3>Dependency Injection</h3></div>
           <div class="skill-tags">
-            <span class="skill-tag">Retrofit</span><span class="skill-tag">REST APIs</span>
-            <span class="skill-tag">Firebase</span><span class="skill-tag">Crashlytics</span>
-            <span class="skill-tag">FCM</span><span class="skill-tag">Google Maps</span>
-            <span class="skill-tag">Stripe</span><span class="skill-tag">Twilio</span>
+            <span class="skill-tag">Dagger Hilt</span><span class="skill-tag">Dagger 2</span><span class="skill-tag">Koin</span>
           </div>
         </div>
         <div class="skill-category">
-          <div class="skill-category-header">
-            <span class="skill-category-icon">🧠</span>
-            <h3>AI &amp; Machine Learning</h3>
-          </div>
+          <div class="skill-category-header"><span class="skill-category-icon">🧠</span><h3>AI &amp; ML</h3></div>
           <div class="skill-tags">
-            <span class="skill-tag">ML Kit</span><span class="skill-tag">TensorFlow Lite</span>
-            <span class="skill-tag">On-Device ML</span><span class="skill-tag">Receipt OCR</span>
-            <span class="skill-tag">AI Feature Integration</span>
+            <span class="skill-tag">ML Kit</span><span class="skill-tag">OCR / Receipt Scanning</span><span class="skill-tag">On-device ML</span><span class="skill-tag">TensorFlow Lite</span><span class="skill-tag">GitHub Copilot Workflows</span>
           </div>
         </div>
         <div class="skill-category">
-          <div class="skill-category-header">
-            <span class="skill-category-icon">⚙️</span>
-            <h3>DevOps &amp; Tools</h3>
-          </div>
+          <div class="skill-category-header"><span class="skill-category-icon">📡</span><h3>Real-time &amp; Communication</h3></div>
           <div class="skill-tags">
-            <span class="skill-tag">Git &amp; GitHub</span><span class="skill-tag">CI/CD</span>
-            <span class="skill-tag">Azure DevOps</span><span class="skill-tag">Jira</span>
-            <span class="skill-tag">Play Console</span><span class="skill-tag">Agile/Scrum</span>
-            <span class="skill-tag">JUnit</span><span class="skill-tag">Mockito</span><span class="skill-tag">Espresso</span>
+            <span class="skill-tag">Twilio Messaging</span><span class="skill-tag">Socket.IO</span><span class="skill-tag">WebSockets</span><span class="skill-tag">Push Notifications (FCM)</span>
           </div>
         </div>
-      </div>
-      <div class="proficiency reveal">
-        <h3>Core Proficiency</h3>
-        <div class="progress-list">
-          <div class="progress-item">
-            <div class="progress-header"><span>Kotlin / Android SDK</span><span>95%</span></div>
-            <div class="progress-bar"><div class="progress-fill" data-width="95"></div></div>
+        <div class="skill-category">
+          <div class="skill-category-header"><span class="skill-category-icon">💳</span><h3>Payments</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag">Stripe</span><span class="skill-tag">Klarna</span><span class="skill-tag">BACS</span><span class="skill-tag">Google Pay</span><span class="skill-tag">Card Payments</span>
           </div>
-          <div class="progress-item">
-            <div class="progress-header"><span>Flutter / Dart</span><span>88%</span></div>
-            <div class="progress-bar"><div class="progress-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-category-header"><span class="skill-category-icon">🔗</span><h3>Backend &amp; APIs</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag">REST APIs</span><span class="skill-tag">Firebase</span><span class="skill-tag">Authentication / OTP</span><span class="skill-tag">JSON / Serialization</span><span class="skill-tag">Retrofit</span><span class="skill-tag">OkHttp</span>
           </div>
-          <div class="progress-item">
-            <div class="progress-header"><span>Clean Architecture / MVVM</span><span>93%</span></div>
-            <div class="progress-bar"><div class="progress-fill" data-width="93"></div></div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-category-header"><span class="skill-category-icon">⚙️</span><h3>DevOps &amp; Tooling</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git &amp; GitHub</span><span class="skill-tag">Gradle</span><span class="skill-tag">CI/CD Pipelines</span><span class="skill-tag">Build Variants</span><span class="skill-tag">Play Store Release</span><span class="skill-tag">Hotfix &amp; Merge Workflows</span>
           </div>
-          <div class="progress-item">
-            <div class="progress-header"><span>Java (Android)</span><span>90%</span></div>
-            <div class="progress-bar"><div class="progress-fill" data-width="90"></div></div>
-          </div>
-          <div class="progress-item">
-            <div class="progress-header"><span>Firebase &amp; REST APIs</span><span>90%</span></div>
-            <div class="progress-bar"><div class="progress-fill" data-width="90"></div></div>
-          </div>
-          <div class="progress-item">
-            <div class="progress-header"><span>TensorFlow Lite / AI</span><span>78%</span></div>
-            <div class="progress-bar"><div class="progress-fill" data-width="78"></div></div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-category-header"><span class="skill-category-icon">🎯</span><h3>Practices</h3></div>
+          <div class="skill-tags">
+            <span class="skill-tag">Code Review</span><span class="skill-tag">Mentoring</span><span class="skill-tag">Agile / Scrum</span><span class="skill-tag">Jira &amp; Trello</span><span class="skill-tag">Crash Monitoring</span><span class="skill-tag">Performance Optimization</span><span class="skill-tag">RTL Localization</span>
           </div>
         </div>
       </div>
@@ -373,9 +412,10 @@
   <!-- ===== PROJECTS ===== -->
   <section class="projects section" id="projects">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">What I've built</span>
-        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      <div class="about-hd reveal">
+        <span class="about-num">04</span>
+        <h2 class="about-title">Projects</h2>
+        <div class="about-hd-line"></div>
       </div>
       <div class="projects-filter reveal">
         <button class="filter-btn active" data-filter="all">All</button>
@@ -667,6 +707,45 @@
           </div>
         </div>
 
+        <!-- 14a Al Essa -->
+        <div class="project-card reveal" data-category="android" style="--card-accent:#65a30d">
+          <div class="project-card-top">
+            <div class="project-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div class="project-ext-links">
+              <a href="https://play.google.com/store/apps/details?id=com.ime.aleisa&hl=en_US" target="_blank" rel="noopener" title="Play Store" class="ext-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Java</span><span>Kotlin</span><span>RTL</span><span>Document Storage</span></div>
+            <h3>Al Essa - Family Database</h3>
+            <p>Bilingual mobile app centralizing 145+ years of family data with hierarchical family tree, member profiles, news updates, and document storage. Full RTL support for KSA users.</p>
+          </div>
+          <div class="project-footer">
+            <span class="store-badge play">▶ 500+ Downloads - Google Play</span>
+          </div>
+        </div>
+
+        <!-- 14b FSM Dashboard -->
+        <div class="project-card reveal" data-category="android" style="--card-accent:#475569">
+          <div class="project-card-top">
+            <div class="project-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span>Python</span><span>FastAPI</span><span>Web Dashboard</span></div>
+            <h3>FSM Dashboard - Marketplace Web</h3>
+            <p>Web-based platform for businesses to manage jobs, engineers, clients, schedules and analytics in real time. Centralised tracking and reporting for Joblogic field operations.</p>
+          </div>
+          <div class="project-footer">
+            <span class="store-badge enterprise">🏢 Internal - Joblogic Marketplace</span>
+          </div>
+        </div>
+
         <!-- 14 -->
         <div class="project-card reveal" data-category="android opensource" style="--card-accent:#7c3aed">
           <div class="project-card-top">
@@ -696,9 +775,10 @@
   <!-- ===== CONTACT ===== -->
   <section class="contact section" id="contact">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Let's talk</span>
-        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+      <div class="about-hd reveal">
+        <span class="about-num">05</span>
+        <h2 class="about-title">Get In Touch</h2>
+        <div class="about-hd-line"></div>
       </div>
       <div class="contact-grid">
         <div class="contact-info reveal">

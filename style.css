@@ -169,30 +169,50 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 @keyframes scroll-bounce{0%,100%{transform:translateX(-50%) translateY(0);opacity:1}50%{transform:translateX(-50%) translateY(10px);opacity:0.3}}
 
 /* ============================================
+   SECTION HEADER (numbered style)
+   ============================================ */
+.about-hd{display:flex;align-items:center;gap:14px;margin-bottom:40px}
+.about-num{background:rgba(59,130,246,0.12);border:1px solid rgba(59,130,246,0.3);color:var(--accent);font-size:0.72rem;font-weight:700;padding:4px 9px;border-radius:7px;font-family:'Fira Code',monospace;flex-shrink:0;letter-spacing:0.04em}
+.about-title{font-size:1.75rem;font-weight:800;letter-spacing:-0.03em;white-space:nowrap}
+.about-hd-line{flex:1;height:1px;background:linear-gradient(to right,var(--border-hover),transparent);margin-left:4px}
+
+/* ============================================
    ABOUT
    ============================================ */
 .about{background:var(--bg-secondary)}
-.about-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:64px;align-items:start}
-.about-image-wrapper{display:flex;flex-direction:column;gap:24px}
-.about-img-frame{position:relative;border-radius:var(--radius-lg);overflow:visible}
-.about-img{width:100%;max-width:380px;height:auto;object-fit:contain;border-radius:var(--radius-lg);border:1px solid var(--border);box-shadow:var(--shadow);display:block}
-.about-badge-floating{position:absolute;bottom:-16px;right:-8px;background:var(--gradient);color:#fff;padding:10px 18px;border-radius:50px;font-size:0.85rem;font-weight:600;box-shadow:0 8px 24px rgba(59,130,246,0.4);white-space:nowrap}
 
-.about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
-.stat-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:18px 10px;text-align:center;transition:var(--transition)}
-.stat-card:hover{border-color:var(--border-hover);transform:translateY(-4px);box-shadow:var(--shadow-glow)}
-.stat-number{font-size:2rem;font-weight:800;background:var(--gradient-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block;line-height:1}
-.stat-plus{font-size:1.1rem;font-weight:700;color:var(--accent)}
-.stat-label{display:block;font-size:0.75rem;color:var(--text-muted);margin-top:6px;font-weight:500}
+/* Bio + photo row */
+.about-top{display:grid;grid-template-columns:1fr 340px;gap:48px;align-items:start;margin-bottom:36px}
+.about-bio{color:var(--text-secondary);font-size:0.97rem;line-height:1.9;font-weight:400}
+.about-bio strong{color:var(--text-primary)}
 
-.about-text h3{font-size:1.5rem;font-weight:700;margin-bottom:16px;letter-spacing:-0.02em}
-.about-text p{color:var(--text-secondary);margin-bottom:14px;font-size:0.97rem;line-height:1.8}
-.about-text strong{color:var(--text-primary)}
+/* Photo card */
+.about-photo-card{position:relative;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow);flex-shrink:0}
+.about-photo-img{width:100%;height:auto;display:block;object-fit:cover}
+.about-photo-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(5,10,20,0.95) 0%,rgba(5,10,20,0.6) 70%,transparent 100%);padding:20px 18px 16px;pointer-events:none}
+.overlay-eyebrow{display:block;font-size:0.65rem;font-weight:700;letter-spacing:0.12em;color:var(--accent-3);text-transform:uppercase;margin-bottom:4px}
+.overlay-title{font-size:1rem;font-weight:700;color:#fff;margin-bottom:6px;line-height:1.3}
+.overlay-location{display:flex;align-items:center;gap:5px;font-size:0.75rem;color:rgba(255,255,255,0.65)}
+
+/* Industries / Languages blocks */
+.about-block{margin-bottom:28px}
+.about-block-label{display:flex;align-items:center;gap:7px;font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:12px}
+.about-chips{display:flex;flex-wrap:wrap;gap:8px}
+.about-chip{background:var(--bg-card);border:1px solid var(--border);color:var(--text-secondary);padding:6px 14px;border-radius:50px;font-size:0.82rem;font-weight:500;transition:var(--transition)}
+.about-chip:hover{border-color:var(--border-hover);color:var(--text-primary)}
+.chip-lang{background:rgba(59,130,246,0.06);border-color:rgba(59,130,246,0.2);color:var(--accent-3)}
+
+/* Track record cards */
+.track-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.track-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:16px 18px;display:flex;align-items:center;gap:12px;transition:var(--transition)}
+.track-card:hover{border-color:var(--border-hover);transform:translateY(-3px);box-shadow:var(--shadow-glow)}
+.track-icon{width:36px;height:36px;background:var(--gradient);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;flex-shrink:0}
+.track-card strong{font-size:0.88rem;font-weight:600;color:var(--text-primary);line-height:1.35}
+
+/* Legacy classes kept so older elements don't break */
+.about-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}
 .about-meta{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}
 .about-meta-item{display:flex;align-items:center;gap:7px;font-size:0.85rem;color:var(--text-secondary);font-weight:500}
-.about-meta-item span:first-child{font-size:1rem}
-.about-meta-item strong{color:var(--text-primary)}
-.about-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}
 
 /* ============================================
    EXPERIENCE TIMELINE
@@ -342,8 +362,9 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
   .hero-actions,.hero-socials{justify-content:center}
   .hero-photo-wrap{width:240px;height:240px}
   .hero-float-badge{display:none}
-  .about-grid{grid-template-columns:1fr;gap:40px}
-  .about-highlights{grid-template-columns:1fr}
+  .about-top{grid-template-columns:1fr;gap:32px}
+  .about-photo-card{max-width:420px}
+  .track-grid{grid-template-columns:1fr 1fr}
   .contact-grid{grid-template-columns:1fr;gap:40px}
   .hamburger{display:flex}
   .nav-right .nav-cta{display:none}
@@ -359,7 +380,9 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 
 @media (max-width: 560px) {
   .section{padding:70px 0}
-  .about-stats{grid-template-columns:repeat(3,1fr)}
+  .track-grid{grid-template-columns:1fr}
+  .about-hd{gap:10px}
+  .about-title{font-size:1.4rem}
   .proficiency{padding:24px}
   .contact-form{padding:22px}
   .hero-actions{flex-direction:column;align-items:center}
