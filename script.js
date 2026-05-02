@@ -74,10 +74,11 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
 /* ---------- Typewriter effect ---------- */
 const phrases = [
-  'Full-Stack Developer',
-  'React & Node.js Expert',
-  'Problem Solver',
-  'UI/UX Enthusiast',
+  'Senior Mobile Developer',
+  'Android (Kotlin & Java) Expert',
+  'Flutter App Developer',
+  'Clean Architecture Advocate',
+  'AI-Powered App Builder',
   'Open Source Contributor',
 ];
 
