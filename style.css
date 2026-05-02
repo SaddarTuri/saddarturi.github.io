@@ -315,9 +315,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
    CONTACT
    ============================================ */
 .contact{background:var(--bg-secondary)}
-.contact-info h3{font-size:1.4rem;font-weight:700;margin-bottom:12px;letter-spacing:-0.02em}
-.contact-info>p{color:var(--text-secondary);line-height:1.8;margin-bottom:32px;max-width:640px}
-.contact-info h3{font-size:1.5rem;font-weight:700;margin-bottom:16px;letter-spacing:-0.02em}
+.contact-info h3{font-size:1.5rem;font-weight:700;margin-bottom:12px;letter-spacing:-0.02em}
 .contact-info>p{color:var(--text-secondary);line-height:1.8;margin-bottom:32px}
 .contact-details{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
 .contact-item{display:flex;align-items:center;gap:14px;padding:16px 18px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);transition:var(--transition)}
