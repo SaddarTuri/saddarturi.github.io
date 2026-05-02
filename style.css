@@ -183,7 +183,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 
 /* Bio + photo row */
 .about-top{display:grid;grid-template-columns:1fr 340px;gap:48px;align-items:stretch;margin-bottom:36px}
-.about-bio{color:var(--text-secondary);font-size:0.97rem;line-height:1.9;font-weight:400;text-align:justify;hyphens:auto}
+.about-bio{color:var(--text-secondary);font-size:0.97rem;line-height:1.9;font-weight:400;text-align:justify;hyphens:auto;min-width:0;word-break:break-word}
 .about-bio strong{color:var(--text-primary)}
 
 /* Photo card */
@@ -202,10 +202,9 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .industry-item:hover{border-color:var(--border-hover);color:var(--text-primary);transform:translateY(-2px);box-shadow:var(--shadow-glow)}
 .industry-icon{color:var(--accent);flex-shrink:0}
 
-/* Legacy chip styles (still used for track record labels) */
 .about-chips{display:flex;flex-wrap:wrap;gap:8px}
-.about-chip{background:var(--bg-card);border:1px solid var(--border);color:var(--text-secondary);padding:6px 14px;border-radius:50px;font-size:0.82rem;font-weight:500;transition:var(--transition)}
-.about-chip:hover{border-color:var(--border-hover);color:var(--text-primary)}
+.about-chip{background:rgba(59,130,246,0.08);border:1px solid rgba(59,130,246,0.22);color:var(--accent-3);padding:7px 16px;border-radius:50px;font-size:0.83rem;font-weight:600;letter-spacing:0.01em;transition:var(--transition)}
+.about-chip:hover{background:rgba(59,130,246,0.16);border-color:var(--accent);color:var(--text-primary)}
 
 /* Track record cards */
 .track-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
@@ -239,8 +238,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .role-progression svg{color:var(--accent);opacity:0.6;flex-shrink:0}
 .role-current{color:var(--accent);font-weight:700}
 .timeline-bullets{list-style:none;margin-bottom:16px;display:flex;flex-direction:column;gap:8px}
-.timeline-bullets li{position:relative;padding-left:18px;font-size:0.875rem;color:var(--text-secondary);line-height:1.65}
-.timeline-bullets li::before{content:'▸';position:absolute;left:0;color:var(--accent);font-size:0.72rem;top:3px}
+.timeline-bullets li{font-size:0.875rem;color:var(--text-secondary);line-height:1.65;padding-left:0}
 .timeline-tags{display:flex;flex-wrap:wrap;gap:7px}
 .timeline-tags span{background:rgba(59,130,246,0.08);border:1px solid rgba(59,130,246,0.2);color:var(--accent-3);padding:3px 10px;border-radius:50px;font-size:0.74rem;font-weight:500}
 
@@ -315,7 +313,8 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
    CONTACT
    ============================================ */
 .contact{background:var(--bg-secondary)}
-.contact-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:64px;align-items:start}
+.contact-grid{display:block}
+.contact-info{max-width:680px}
 .contact-info h3{font-size:1.5rem;font-weight:700;margin-bottom:16px;letter-spacing:-0.02em}
 .contact-info>p{color:var(--text-secondary);line-height:1.8;margin-bottom:32px}
 .contact-details{display:flex;flex-direction:column;gap:12px}
@@ -369,8 +368,6 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
   .about-top{grid-template-columns:1fr;gap:32px}
   .about-photo-card{max-width:420px;min-height:300px}
   .track-grid{grid-template-columns:1fr 1fr}
-  .industry-grid{grid-template-columns:repeat(2,1fr)}
-  .contact-grid{grid-template-columns:1fr;gap:40px}
   .hamburger{display:flex}
   .nav-right .nav-cta{display:none}
   .nav-links{position:fixed;top:var(--nav-height);left:0;width:100%;flex-direction:column;background:var(--nav-bg);backdrop-filter:blur(20px);padding:24px;gap:4px;border-bottom:1px solid var(--border);transform:translateY(-120%);transition:transform var(--transition);z-index:999}
@@ -384,12 +381,10 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 @media (max-width: 560px) {
   .section{padding:70px 0}
   .track-grid{grid-template-columns:1fr}
-  .industry-grid{grid-template-columns:1fr 1fr}
   .about-hd{gap:10px}
   .about-title{font-size:1.4rem}
   .footer-content{flex-direction:column;text-align:center;gap:10px}
   .proficiency{padding:24px}
-  .contact-form{padding:22px}
   .hero-actions{flex-direction:column;align-items:center}
   .skills-categories{grid-template-columns:1fr}
   .projects-grid{grid-template-columns:1fr}
