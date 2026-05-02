@@ -182,14 +182,14 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .about{background:var(--bg-secondary)}
 
 /* Bio + photo row */
-.about-top{display:grid;grid-template-columns:1fr 340px;gap:48px;align-items:stretch;margin-bottom:36px}
+.about-top{display:grid;grid-template-columns:1fr 340px;gap:48px;align-items:start;margin-bottom:36px}
 .about-bio{color:var(--text-secondary);font-size:0.97rem;line-height:1.9;font-weight:400;overflow-wrap:break-word;min-width:0;display:flex;flex-direction:column;gap:14px}
 .about-bio p{text-align:justify}
 .about-bio strong{color:var(--text-primary)}
 
 /* Photo card */
-.about-photo-card{position:relative;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow);flex-shrink:0;display:flex;flex-direction:column}
-.about-photo-img{width:100%;flex:1;min-height:0;object-fit:cover;display:block}
+.about-photo-card{position:relative;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow)}
+.about-photo-img{width:100%;height:auto;display:block;object-fit:cover}
 .about-photo-overlay{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(5,10,20,0.95) 0%,rgba(5,10,20,0.6) 70%,transparent 100%);padding:20px 18px 16px;pointer-events:none}
 .overlay-eyebrow{display:block;font-size:0.65rem;font-weight:700;letter-spacing:0.12em;color:var(--accent-3);text-transform:uppercase;margin-bottom:4px}
 .overlay-title{font-size:1rem;font-weight:700;color:#fff;margin-bottom:6px;line-height:1.3}
