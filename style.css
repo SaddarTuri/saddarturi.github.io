@@ -94,7 +94,13 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 .nav-header{position:fixed;top:0;left:0;width:100%;z-index:1000;height:var(--nav-height);display:flex;align-items:center;transition:background var(--transition),backdrop-filter var(--transition),border-color var(--transition);border-bottom:1px solid transparent}
 .nav-header.scrolled{background:var(--nav-bg);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-color:var(--border)}
 .nav-container{max-width:1200px;width:100%;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:24px}
-.nav-logo{font-size:1.5rem;font-weight:800;letter-spacing:-0.03em;margin-right:auto}
+.nav-logo{display:flex;align-items:center;gap:10px;margin-right:auto;color:var(--text-primary);transition:var(--transition)}
+.nav-logo:hover{color:var(--accent)}
+.logo-mark{display:flex;width:34px;height:34px;flex-shrink:0;color:var(--accent)}
+.logo-mark svg{width:100%;height:100%}
+.logo-text{font-size:1.05rem;font-weight:600;letter-spacing:-0.02em;line-height:1}
+.logo-text span{font-weight:700;color:var(--text-primary)}
+.nav-logo:hover .logo-text span{color:var(--accent)}
 .nav-links{display:flex;align-items:center;gap:4px}
 .nav-link{padding:8px 14px;border-radius:8px;color:var(--text-secondary);font-size:0.9rem;font-weight:500;transition:var(--transition)}
 .nav-link:hover,.nav-link.active{color:var(--text-primary);background:rgba(59,130,246,0.1)}
@@ -380,6 +386,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 
 @media (max-width: 560px) {
   .section{padding:70px 0}
+  .logo-text{display:none}
   .track-grid{grid-template-columns:1fr}
   .contact-details{grid-template-columns:1fr}
   .about-hd{gap:10px}
